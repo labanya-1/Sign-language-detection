@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Whisper&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="slide">
+            <!-- .............3rd slide -->
+            <div class="item1" style="background-image: url(static\css\hackerspace-logo.jpg);">
+
+            </div>
+            <div class="item it1" style="background-image: url(static/css/ai-loader-opt.gif);">
+                <div class="content">
+                    <div class="name">SIGN LANGUAGE <br>
+                        DETECTION</div>
+                    <div class="des">Detect the signs with us </div>
+                    <!-- <button class="control-button"><a href="https://hackerspace-portfolio.vercel.app/">See More</a></button> -->
+                </div>
+            </div>
+            <!-- ...................video streaming........ -->
+            <div class="item it2">
+                <img class="stream" src="{{ url_for ('video2') }}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+    </div>
+
+
+    <script src="{{url_for('static',filename='css/app.js')}}"></script>
+</body>
+
+</html>
